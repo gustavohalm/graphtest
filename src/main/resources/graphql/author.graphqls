@@ -10,6 +10,6 @@ type Query {
     countAuthors: Int!
 }
 
-type Mutaion{
+type Mutation{
     newAuthor(firstName: String!, lastName: String!) : Author!
 }
