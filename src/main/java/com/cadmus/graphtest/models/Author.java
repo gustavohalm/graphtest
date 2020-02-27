@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String firstName;
     private String lastName;
     public Author(){
@@ -19,15 +19,15 @@ public class Author {
         this.lastName = lastName;
     }
 
-    public  Author(int id){
+    public  Author(Long id){
         this.id = id;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
